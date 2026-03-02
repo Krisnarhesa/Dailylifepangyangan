@@ -1,0 +1,325 @@
+.pageHeader {
+  position: relative;
+  text-align: center;
+  padding: 60px 24px 20px;
+  overflow: hidden;
+}
+
+.contentArea {
+  position: relative;
+}
+
+/* Proker Grid */
+.prokerGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+/* Proker Card */
+.prokerCard {
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all var(--transition-normal);
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.prokerCard:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-gold);
+  box-shadow: var(--shadow-gold);
+  transform: translateY(-5px);
+  color: inherit;
+}
+
+.prokerCover {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(61, 90, 40, 0.08), rgba(139, 105, 20, 0.06));
+}
+
+.prokerCover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.prokerCard:hover .prokerCover img {
+  transform: scale(1.05);
+}
+
+.coverPlaceholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--text-muted);
+}
+
+.prokerBadge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(255, 250, 221, 0.85);
+  backdrop-filter: blur(6px);
+  border: 1px solid var(--border-gold);
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 0.7rem;
+  color: var(--text-gold);
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.prokerInfo {
+  padding: 20px;
+}
+
+.prokerTitle {
+  font-family: var(--font-script);
+  font-size: 1.6rem;
+  color: var(--text-gold);
+  margin-bottom: 8px;
+}
+
+.prokerDesc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.prokerMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prokerDate {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+}
+
+.prokerPhotoCount {
+  font-size: 0.75rem;
+  color: var(--text-gold);
+}
+
+@media (max-width: 600px) {
+  .prokerGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+/* ===== PROKER DETAIL (Gallery) ===== */
+.detailHeader {
+  text-align: center;
+  padding: 60px 24px 20px;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-gold);
+  font-size: 0.9rem;
+  margin-bottom: 24px;
+  transition: color var(--transition-fast);
+}
+
+.backLink:hover {
+  color: var(--color-secondary-light);
+}
+
+.detailTitle {
+  font-family: var(--font-script);
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: var(--text-gold);
+  margin-bottom: 8px;
+}
+
+.detailDesc {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.detailDate {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+
+/* Photo Gallery Grid */
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  margin-bottom: 60px;
+}
+
+.galleryItem {
+  position: relative;
+  aspect-ratio: 4/3;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(61, 90, 40, 0.06);
+  border: 1px solid var(--border-subtle);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.galleryItem:hover {
+  border-color: var(--border-gold);
+  box-shadow: var(--shadow-gold);
+  transform: scale(1.02);
+}
+
+.galleryMedia {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.galleryItem:hover .galleryMedia {
+  transform: scale(1.05);
+}
+
+.videoIndicator {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  pointer-events: none;
+  backdrop-filter: blur(4px);
+}
+
+.lightboxContent {
+  max-width: 90vw;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lightboxMedia {
+  max-width: 90vw;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+}
+
+.lightboxCaption {
+  margin-top: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 60px 24px;
+  color: var(--text-muted);
+}
+
+.emptyState p {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  animation: fadeIn 0.3s ease;
+}
+
+.lightboxClose {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.lightboxImg {
+  max-width: 90vw;
+  max-height: 85vh;
+  border-radius: 8px;
+}
+
+.lightboxNav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(212, 168, 67, 0.2);
+  border: 1px solid var(--border-gold);
+  color: var(--text-gold);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.lightboxNav:hover {
+  background: rgba(212, 168, 67, 0.4);
+}
+
+.lightboxPrev {
+  left: 20px;
+}
+
+.lightboxNext {
+  right: 20px;
+}
+
+@media (max-width: 600px) {
+  .galleryGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+}

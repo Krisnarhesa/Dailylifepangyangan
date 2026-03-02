@@ -1,0 +1,110 @@
+.footer {
+  position: relative;
+  padding: 28px 24px 20px;
+  text-align: center;
+  background: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.06) 0%);
+  border-top: 1px solid rgba(61, 90, 40, 0.1);
+  overflow: hidden;
+}
+
+.footerInner {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.footerTitle {
+  font-family: var(--font-script);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 2px;
+}
+
+.footerLocation {
+  font-family: var(--font-serif);
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.footerDivider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px auto;
+}
+
+.footerDivider::before,
+.footerDivider::after {
+  content: '';
+  height: 1px;
+  width: 35px;
+  background: linear-gradient(90deg, transparent, var(--color-secondary), transparent);
+}
+
+.footerDividerIcon {
+  color: var(--color-secondary);
+  font-size: 0.7rem;
+}
+
+.footerPeriod {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.copyright {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(61, 90, 40, 0.08);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  letter-spacing: 0.3px;
+}
+
+.copyright span {
+  color: #e25555;
+}
+
+/* Social Media */
+.socialSection {
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+.socialTitle {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+}
+
+.socialLink:hover {
+  color: var(--color-secondary);
+  border-color: var(--color-secondary);
+  transform: scale(1.15);
+  box-shadow: 0 0 12px rgba(139, 105, 20, 0.2);
+}

@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "name": "I MADE CANDRA ARYA WIRANATA",
+    "role": "Koordinator Desa",
+    "division": "Inti",
+    "photo": "/images/members/member-1.jpg",
+    "quote": "Pesan dan kesan selama KKN..."
+  },
+  {
+    "id": 2,
+    "name": "SINDY FIRDAUS",
+    "role": "Sekretaris",
+    "division": "Inti",
+    "photo": "/images/members/member-2.jpg",
+    "quote": "Pesan dan kesan selama KKN..."
+  },
+  {
+    "id": 3,
+    "name": "OMINIKE ASRIYANTI JELIA",
+    "role": "Bendahara",
+    "division": "Inti",
+    "photo": "/images/members/member-3.jpg",
+    "quote": "Pesan dan kesan selama KKN..."
+  },
+  {
+    "id": 4,
+    "name": "KOMANG TRISYA CAHYANI",
+    "role": "Koordinator Divisi PDD",
+    "division": "PDD",
+    "photo": "/images/members/member-4.jpg",
+    "quote": "Pesan dan kesan selama KKN..."
+  },
+  {
+    "id": 5,
+    "name": "PUTU KRISNA RHESA PRADNYANA",
+    "role": "Anggota",
+    "division": "PDD",
+    "photo": "/images/members/member-5.jpg",
+    "quote": "Pesan dan kesan selama KKN..."
+  },
+  {
+    "id": 6,
+    "name": "PUTU STEVEN BELVA CHAN",
+    "role": "Anggota",
+    "division": "PDD",
+    "photo": "/images/members/member-6.jpg",
+    "quote": "Pesan dan kesan selama KKN..."
+  },
+  {
+    "id": 7,
+    "name": "WIVINA TRESNA HENDAYU",
+    "role": "Anggota",
+    "division": "PDD",
+    "photo": "/images/members/member-7.jpg",
+    "quote": "Pesan dan kesan selama KKN..."
+  },
+  {
+    "id": 8,
+    "name": "LUH DEVANY NATANIA PUTRI WIKARSA",
+    "role": "Koordinator Kesehatan Masyarakat",
+    "division": "Kesehatan Masyarakat",
+    "photo": "/images/members/member-8.jpg",
+    "quote": "Pesan dan kesan selama KKN..."
+  },
+  {
+    "id": 9,
+    "name": "SINDY FIRDAUS",
+    "role": "Anggota",
+    "division": "Kesehatan Masyarakat",
+    "photo": "/images/members/member-9.jpg",
+    "quote": "Pesan dan kesan selama KKN..."
+  },
+  {
+    "id": 10,
+    "name": "KOMANG TRISYA CAHYANI",
+    "role": "Anggota",
+    "division": "Kesehatan Masyarakat",
+    "photo": "/images/members/member-10.jpg",
+    "quote": "Pesan dan kesan selama KKN..."
+  },
+  {
+    "id": 11,
+    "name": "PUTU KRISNA RHESA PRADNYANA",
+    "role": "Anggota",
+    "division": "Prasarana Fisik",
+    "photo": "/images/members/member-11.jpg",
+    "quote": "Pesan dan kesan selama KKN..."
+  },
+  {
+    "id": 12,
+    "name": "PUTU STEVEN BELVA CHAN",
+    "role": "Koordinator Prasarana Fisik",
+    "division": "Prasarana Fisik",
+    "photo": "/images/members/member-12.jpg",
+    "quote": "Pesan dan kesan selama KKN..."
+  },
+  {
+    "id": 13,
+    "name": "NI KOMANG ARIASIH",
+    "role": "Anggota",
+    "division": "Prasarana Fisik",
+    "photo": "/images/members/member-13.jpg",
+    "quote": "Pesan dan kesan selama KKN..."
+  },
+  {
+    "id": 14,
+    "name": "KHEZIA AURIELLE PUTRI IMMANUEL",
+    "role": "Koordinator Sosial Budaya",
+    "division": "Sosial Budaya",
+    "photo": "/images/members/member-14.jpg",
+    "quote": "Pesan dan kesan selama KKN..."
+  },
+  {
+    "id": 15,
+    "name": "WIVINA TRESNA HENDAYU",
+    "role": "Anggota",
+    "division": "Sosial Budaya",
+    "photo": "/images/members/member-15.jpg",
+    "quote": "Pesan dan kesan selama KKN..."
+  },
+  {
+    "id": 16,
+    "name": "ATANIA KARINA SARAGIH",
+    "role": "Anggota",
+    "division": "Sosial Budaya",
+    "photo": "/images/members/member-16.jpg",
+    "quote": "Pesan dan kesan selama KKN..."
+  },
+  {
+    "id": 17,
+    "name": "OMINIKE ASRIYANTI JELIA",
+    "role": "Anggota",
+    "division": "Sosial Budaya",
+    "photo": "/images/members/member-17.jpg",
+    "quote": "Pesan dan kesan selama KKN..."
+  },
+  {
+    "id": 18,
+    "name": "DEFA ERLANGGA FIRDAUS",
+    "role": "Anggota",
+    "division": "Sosial Budaya",
+    "photo": "/images/members/member-18.jpg",
+    "quote": "Pesan dan kesan selama KKN..."
+  },
+  {
+    "id": 19,
+    "name": "SEKAR AYU ALFI MA'ARIF",
+    "role": "Koordinator Peningkatan Produksi",
+    "division": "Peningkatan Produksi",
+    "photo": "/images/members/member-19.jpg",
+    "quote": "Pesan dan kesan selama KKN..."
+  },
+  {
+    "id": 20,
+    "name": "I PUTU HARI NATHA SEDANA",
+    "role": "Anggota",
+    "division": "Peningkatan Produksi",
+    "photo": "/images/members/member-20.jpg",
+    "quote": "Pesan dan kesan selama KKN..."
+  },
+  {
+    "id": 21,
+    "name": "AMORITA SALSABILLA ARDEALEVI",
+    "role": "Anggota",
+    "division": "Peningkatan Produksi",
+    "photo": "/images/members/member-21.jpg",
+    "quote": "Pesan dan kesan selama KKN..."
+  }
+]

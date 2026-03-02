@@ -1,0 +1,97 @@
+.scrollContainer {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.scrollRow {
+  overflow: hidden;
+  width: 100%;
+}
+
+.scrollTrack {
+  display: flex;
+  gap: 12px;
+  width: max-content;
+}
+
+.scrollLeft {
+  animation: scrollLeft 40s linear infinite;
+}
+
+.scrollRight {
+  animation: scrollRight 40s linear infinite;
+}
+
+.scrollItem {
+  flex-shrink: 0;
+  width: 260px;
+  height: 180px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid var(--border-subtle);
+  transition: border-color 0.3s ease;
+}
+
+.scrollItem:hover {
+  border-color: var(--color-secondary);
+}
+
+.scrollItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.scrollItem:hover img {
+  transform: scale(1.08);
+}
+
+.itemOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(139, 105, 20, 0.75) 100%);
+  display: flex;
+  align-items: flex-end;
+  padding: 10px 12px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.scrollItem:hover .itemOverlay {
+  opacity: 1;
+}
+
+.itemOverlay span {
+  color: #fff;
+  font-family: var(--font-serif);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+@keyframes scrollLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes scrollRight {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+/* Pause on hover */
+.scrollRow:hover .scrollTrack {
+  animation-play-state: paused;
+}
+
+@media (max-width: 768px) {
+  .scrollItem {
+    width: 200px;
+    height: 140px;
+  }
+}

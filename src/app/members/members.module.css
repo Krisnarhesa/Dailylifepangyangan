@@ -1,0 +1,337 @@
+.pageHeader {
+  position: relative;
+  text-align: center;
+  padding: 60px 24px 20px;
+  overflow: hidden;
+}
+
+.contentArea {
+  position: relative;
+}
+
+/* Division Groups */
+.divisionGroup {
+  margin-bottom: 48px;
+  padding: 36px 28px 32px;
+  border-radius: 20px;
+  border: 1px solid rgba(139, 105, 20, 0.15);
+  background: linear-gradient(
+    145deg,
+    rgba(255, 250, 221, 0.6) 0%,
+    rgba(255, 255, 255, 0.35) 50%,
+    rgba(139, 105, 20, 0.03) 100%
+  );
+  backdrop-filter: blur(8px);
+  box-shadow:
+    0 2px 16px rgba(139, 105, 20, 0.06),
+    0 0 0 1px rgba(255, 250, 221, 0.4) inset;
+  animation: sectionReveal 0.7s ease both;
+}
+
+@keyframes sectionReveal {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.divisionTitle {
+  font-family: var(--font-script);
+  font-size: 2.2rem;
+  color: var(--text-gold);
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.divisionLine {
+  width: 80px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-secondary), transparent);
+  margin: 0 auto 24px;
+}
+
+/* Group Photo (Foto Bareng) */
+.groupPhotoSection {
+  padding-bottom: 40px;
+}
+
+.groupPhotoWrap {
+  max-width: 700px;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 3px solid var(--color-secondary);
+  outline: 3px solid rgba(139, 105, 20, 0.15);
+  outline-offset: 4px;
+  box-shadow:
+    0 4px 20px rgba(139, 105, 20, 0.15),
+    0 8px 40px rgba(0, 0, 0, 0.1);
+}
+
+.groupPhotoImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Division Photo (Foto per Divisi) */
+.divisionPhotoWrap {
+  max-width: 500px;
+  margin: 0 auto 28px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid var(--border-subtle);
+  transition: border-color 0.3s ease;
+}
+
+.divisionPhotoWrap:hover {
+  border-color: var(--color-secondary);
+}
+
+.divisionPhotoImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Koordinator Row — centered on top */
+.koorRow {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+/* Member Grid */
+.memberGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+/* Member Card */
+.memberCard {
+  width: 260px;
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.35s ease;
+  cursor: pointer;
+  animation: cardFadeIn 0.6s ease both;
+}
+
+/* Spesifik untuk Koordinator Desa agar selalu di tengah atas (1 baris sendiri) */
+.memberCard[data-role="Koordinator Desa"] {
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+/* Container untuk baris jika kita mau force break */
+.breakRow {
+  flex-basis: 100%;
+  height: 0;
+}
+
+/* Desktop hover */
+.memberCard:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-gold);
+  box-shadow: var(--shadow-gold);
+  transform: translateY(-6px);
+}
+
+/* Mobile tap/active */
+.memberCard:active {
+  transform: scale(0.97);
+  border-color: var(--border-gold);
+  box-shadow: 0 0 16px rgba(139, 105, 20, 0.25);
+}
+
+.memberPhoto {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+  background: rgba(45, 80, 22, 0.15);
+}
+
+.memberPhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease;
+  filter: grayscale(100%) contrast(1.1);
+}
+
+.memberCard:hover .memberPhoto img {
+  transform: scale(1.08);
+  filter: grayscale(0%) contrast(1);
+}
+
+/* Mobile — no hover, jadi foto langsung berwarna + tap animation */
+@media (hover: none) {
+  .memberPhoto img {
+    filter: grayscale(0%) contrast(1);
+  }
+
+  .memberCard:active .memberPhoto img {
+    transform: scale(1.05);
+    filter: brightness(1.1) contrast(1.05);
+  }
+}
+
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.photoPlaceholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: var(--text-muted);
+  background: linear-gradient(135deg, rgba(61, 90, 40, 0.08), rgba(139, 105, 20, 0.06));
+}
+
+.memberInfo {
+  padding: 16px;
+  text-align: center;
+}
+
+.memberName {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.memberRole {
+  font-size: 0.8rem;
+  color: var(--text-gold);
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Modal */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  animation: fadeIn 0.3s ease;
+}
+
+.modalContent {
+  background: var(--bg-main);
+  border: 1px solid var(--border-gold);
+  border-radius: 20px;
+  max-width: 480px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  animation: fadeInUp 0.4s ease;
+}
+
+.modalClose {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: color var(--transition-fast);
+}
+
+.modalClose:hover {
+  color: var(--text-gold);
+}
+
+.modalPhoto {
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: rgba(45, 80, 22, 0.15);
+}
+
+.modalPhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modalInfo {
+  padding: 24px;
+  text-align: center;
+}
+
+.modalName {
+  font-family: var(--font-script);
+  font-size: 2rem;
+  color: var(--text-gold);
+  margin-bottom: 4px;
+}
+
+.modalRole {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.modalDivision {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.modalQuote {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  padding: 16px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+@media (max-width: 600px) {
+  .memberGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .memberInfo {
+    padding: 12px;
+  }
+
+  .memberName {
+    font-size: 0.9rem;
+  }
+}

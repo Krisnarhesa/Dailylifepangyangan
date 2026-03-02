@@ -1,0 +1,68 @@
+[
+  {
+    "id": "pembukaan-kkn",
+    "title": "Pembukaan KKN",
+    "division": "",
+    "description": "Kegiatan Pembukaan KKN",
+    "date": "15 Juli 2025",
+    "coverImage": "/images/proker/pembukaan-kkn/1.jpg",
+    "photos": [
+      "/images/proker/pembukaan-kkn/1.jpg"
+    ],
+    "videos": [
+      "/images/proker/pembukaan-kkn/1.mp4"
+    ]
+  },
+  {
+    "id": "pendampingan-silat",
+    "title": "Pendampingan Silat",
+    "division": "",
+    "description": "Pendampingan silat anak anak desa pangyangan",
+    "date": "16 Juli 2025",
+    "coverImage": "/images/proker/pendampingan-silat/3.jpg",
+    "photos": [
+      "/images/proker/pendampingan-silat/1.jpg",
+      "/images/proker/pendampingan-silat/3.jpg",
+      "/images/proker/pendampingan-silat/2.jpg"
+    ]
+  },
+  {
+    "id": "posyandu-lansia",
+    "title": "Posyandu Lansia",
+    "division": "Kesehatan Masyarakat",
+    "description": "Posyandu lansia adalah kegiatan yang diadakan untuk memantau kesehatan para lansia di desa pangyangan",
+    "date": "18 Juli 2025",
+    "coverImage": "/images/proker/lansia/2.jpg",
+    "photos": [
+      "/images/proker/lansia/2.jpg",
+      "/images/proker/lansia/1.jpg",
+      "/images/proker/lansia/3.jpg"
+    ]
+  },
+   {
+    "id": "posyandu-remaja",
+    "title": "Posyandu Remaja & Ibu Hamil",
+    "division": "Kesehatan Masyarakat",
+    "description": "Posyandu remaja & ibu hamil adalah kegiatan yang diadakan untuk memantau kesehatan para remaja dan ibu hamil di desa pangyangan",
+    "date": "19 Juli 2025",
+    "coverImage": "/images/proker/remaja/8.jpg",
+    "photos": [
+      "/images/proker/remaja/1.jpg",
+      "/images/proker/remaja/3.jpg",
+      "/images/proker/remaja/4.jpg",
+      "/images/proker/remaja/5.jpg",
+      "/images/proker/remaja/6.jpg",
+      "/images/proker/remaja/7.jpg",
+      "/images/proker/remaja/8.jpg",
+      "/images/proker/remaja/9.jpg",
+      "/images/proker/remaja/10.jpg",
+      "/images/proker/remaja/12.jpg",
+      "/images/proker/remaja/13.jpg",
+      "/images/proker/remaja/14.jpg",
+       "/images/proker/remaja/2.jpg",
+      "/images/proker/remaja/11.jpg",
+      "/images/proker/remaja/15.jpg"
+    ]
+  }
+]
+      
