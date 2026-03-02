@@ -1,4 +1,8 @@
+'use client';
+
 import FlowerDecor from '@/components/FlowerDecor/FlowerDecor';
+import LazyImage from '@/components/LazyImage/LazyImage';
+import ScrollReveal from '@/components/ScrollReveal/ScrollReveal';
 import proker from '@/data/proker.json';
 import Link from 'next/link';
 import styles from './proker.module.css';
@@ -29,28 +33,30 @@ export default function ProkerPage() {
         <FlowerDecor size="medium" blur="light" opacity={0.10} rotation={70} delay={3} bottom="30%" left="-1%" />
 
         <div className={styles.prokerGrid}>
-          {proker.map((item) => (
-            <Link
-              key={item.id}
-              href={`/proker/${item.id}`}
-              className={styles.prokerCard}
-            >
-              <div className={styles.prokerCover}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={item.coverImage} alt={item.title} />
-                <span className={styles.prokerBadge}>{item.division}</span>
-              </div>
-              <div className={styles.prokerInfo}>
-                <h2 className={styles.prokerTitle}>{item.title}</h2>
-                <p className={styles.prokerDesc}>{item.description}</p>
-                <div className={styles.prokerMeta}>
-                  <span className={styles.prokerDate}>{item.date}</span>
-                  <span className={styles.prokerPhotoCount}>
-                    {item.photos.length} foto{('videos' in item && (item as { videos?: string[] }).videos?.length) ? ` · ${(item as { videos?: string[] }).videos!.length} video` : ''}
+          {proker.map((item, index) => (
+            <ScrollReveal key={item.id} delay={index * 0.1}>
+              <Link
+                href={`/proker/${item.id}`}
+                className={styles.prokerCard}
+              >
+                <div className={styles.prokerCover}>
+                  <LazyImage src={item.coverImage} alt={item.title} className={styles.coverImg} />
+                  <span className={styles.prokerBadge}>
+                    {item.division}
                   </span>
                 </div>
-              </div>
-            </Link>
+                <div className={styles.prokerInfo}>
+                  <h2 className={styles.prokerTitle}>{item.title}</h2>
+                  <p className={styles.prokerDesc}>{item.description}</p>
+                  <div className={styles.prokerMeta}>
+                    <span className={styles.prokerDate}>{item.date}</span>
+                    <span className={styles.prokerPhotoCount}>
+                      {item.photos.length} foto{('videos' in item && (item as { videos?: string[] }).videos?.length) ? ` · ${(item as { videos?: string[] }).videos!.length} video` : ''}
+                    </span>
+                  </div>
+                </div>
+              </Link>
+            </ScrollReveal>
           ))}
         </div>
       </div>

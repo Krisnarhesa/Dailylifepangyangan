@@ -1,4 +1,6 @@
 'use client';
+import LazyImage from '@/components/LazyImage/LazyImage';
+import ScrollReveal from '@/components/ScrollReveal/ScrollReveal';
 import proker from '@/data/proker.json';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
@@ -44,49 +46,51 @@ export default function ProkerDetailPage() {
 
   return (
     <>
-      <div className={styles.detailHeader}>
-        <Link href="/proker" className={styles.backLink}>
-          ← Kembali ke Kegiatan
-        </Link>
-        <h1 className={styles.detailTitle}>{item.title}</h1>
-        <p className={styles.detailDesc}>{item.description}</p>
-        <p className={styles.detailDate}>{item.date}{item.division && ` • ${item.division}`}</p>
-        <div className="ornament-divider" style={{ marginTop: '24px' }}>
-          <span className="ornament-icon">✦</span>
+      <ScrollReveal>
+        <div className={styles.detailHeader}>
+          <Link href="/proker" className={styles.backLink}>
+            ← Kembali ke Kegiatan
+          </Link>
+          <h1 className={styles.detailTitle}>{item.title}</h1>
+          <p className={styles.detailDesc}>{item.description}</p>
+          <p className={styles.detailDate}>{item.date}{item.division && ` • ${item.division}`}</p>
+          <div className="ornament-divider" style={{ marginTop: '24px' }}>
+            <span className="ornament-icon">✦</span>
+          </div>
         </div>
-      </div>
+      </ScrollReveal>
 
       <div className="container">
         {allMedia.length > 0 ? (
           <div className={styles.galleryGrid}>
             {allMedia.map((src, index) => (
-              <div
-                key={index}
-                className={styles.galleryItem}
-                onClick={() => setLightboxIndex(index)}
-              >
-                {isVideo(src) ? (
-                  <video
-                    src={src}
-                    className={styles.galleryMedia}
-                    muted
-                    playsInline
-                    preload="metadata"
-                    onMouseOver={(e) => (e.target as HTMLVideoElement).play()}
-                    onMouseOut={(e) => {
-                      const v = e.target as HTMLVideoElement;
-                      v.pause();
-                      v.currentTime = 0;
-                    }}
-                  />
-                ) : (
-                  /* eslint-disable-next-line @next/next/no-img-element */
-                  <img src={src} alt={`${item.title} - ${index + 1}`} className={styles.galleryMedia} />
-                )}
-                {isVideo(src) && (
-                  <div className={styles.videoIndicator}>▶</div>
-                )}
-              </div>
+              <ScrollReveal key={index} delay={index * 0.05}>
+                <div
+                  className={styles.galleryItem}
+                  onClick={() => setLightboxIndex(index)}
+                >
+                  {isVideo(src) ? (
+                    <video
+                      src={src}
+                      className={styles.galleryMedia}
+                      muted
+                      playsInline
+                      preload="metadata"
+                      onMouseOver={(e) => (e.target as HTMLVideoElement).play()}
+                      onMouseOut={(e) => {
+                        const v = e.target as HTMLVideoElement;
+                        v.pause();
+                        v.currentTime = 0;
+                      }}
+                    />
+                  ) : (
+                    <LazyImage src={src} alt={`${item.title} - ${index + 1}`} className={styles.galleryMedia} />
+                  )}
+                  {isVideo(src) && (
+                    <div className={styles.videoIndicator}>▶</div>
+                  )}
+                </div>
+              </ScrollReveal>
             ))}
           </div>
         ) : (

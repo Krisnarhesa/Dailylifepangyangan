@@ -45,14 +45,16 @@
   background: linear-gradient(135deg, rgba(61, 90, 40, 0.08), rgba(139, 105, 20, 0.06));
 }
 
-.prokerCover img {
+.prokerCover img,
+.coverImg {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform var(--transition-slow);
 }
 
-.prokerCard:hover .prokerCover img {
+.prokerCard:hover .prokerCover img,
+.prokerCard:hover .coverImg {
   transform: scale(1.05);
 }
 

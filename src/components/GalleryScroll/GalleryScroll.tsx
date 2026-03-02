@@ -1,5 +1,6 @@
 'use client';
 
+import LazyImage from '@/components/LazyImage/LazyImage';
 import proker from '@/data/proker.json';
 import Link from 'next/link';
 import styles from './GalleryScroll.module.css';
@@ -37,8 +38,7 @@ export default function GalleryScroll() {
               href={`/proker/${photo.id}`}
               className={styles.scrollItem}
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={photo.src} alt={photo.title} />
+              <LazyImage src={photo.src} alt={photo.title} className={styles.scrollImg} />
               <div className={styles.itemOverlay}>
                 <span>{photo.title}</span>
               </div>
@@ -56,8 +56,7 @@ export default function GalleryScroll() {
               href={`/proker/${photo.id}`}
               className={styles.scrollItem}
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={photo.src} alt={photo.title} />
+              <LazyImage src={photo.src} alt={photo.title} className={styles.scrollImg} />
               <div className={styles.itemOverlay}>
                 <span>{photo.title}</span>
               </div>

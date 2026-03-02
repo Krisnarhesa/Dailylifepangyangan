@@ -1,6 +1,8 @@
+'use client';
+
 import FlowerDecor from '@/components/FlowerDecor/FlowerDecor';
 import GalleryScroll from '@/components/GalleryScroll/GalleryScroll';
-import proker from '@/data/proker.json';
+import ScrollReveal from '@/components/ScrollReveal/ScrollReveal';
 import siteConfig from '@/data/siteConfig.json';
 import Link from 'next/link';
 import styles from './page.module.css';
@@ -48,21 +50,25 @@ export default function Home() {
         <FlowerDecor size="medium" blur="light" opacity={0.10} rotation={320} delay={3} bottom="-3%" right="0%" />
         <FlowerDecor size="xs" opacity={0.16} rotation={190} delay={5} top="30%" left="20%" />
         <div className="container">
-          <div className="section-heading">
-            <span className="script-title">Kata Pengantar</span>
-            <div className="ornament-divider">
-              <span className="ornament-icon">✦</span>
+          <ScrollReveal>
+            <div className="section-heading">
+              <span className="script-title">Kata Pengantar</span>
+              <div className="ornament-divider">
+                <span className="ornament-icon">✦</span>
+              </div>
+              <p className="subtitle">sambutan kami</p>
             </div>
-            <p className="subtitle">sambutan kami</p>
-          </div>
-          <div className={styles.sambutan}>
-            <p className={styles.sambutanText}>
-              Selamat datang di album kenangan kami. Kuliah Kerja Nyata (KKN) adalah momen yang tak
-              terlupakan sebuah perjalanan penuh pelajaran, kebersamaan, dan cerita yang membekas
-              di hati. Semoga website ini bisa menjadi wadah untuk mengenang setiap tawa, peluh, dan
-              senyuman selama kami mengabdi di {siteConfig.locationName}.
-            </p>
-          </div>
+          </ScrollReveal>
+          <ScrollReveal delay={0.2}>
+            <div className={styles.sambutan}>
+              <p className={styles.sambutanText}>
+                Selamat datang di album kenangan kami. Kuliah Kerja Nyata (KKN) adalah momen yang tak
+                terlupakan sebuah perjalanan penuh pelajaran, kebersamaan, dan cerita yang membekas
+                di hati. Semoga website ini bisa menjadi wadah untuk mengenang setiap tawa, peluh, dan
+                senyuman selama kami mengabdi di {siteConfig.locationName}.
+              </p>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -73,15 +79,19 @@ export default function Home() {
         <FlowerDecor size="small" opacity={0.16} rotation={260} delay={4} bottom="5%" left="10%" />
         <FlowerDecor size="xs" blur="light" opacity={0.12} rotation={90} delay={1} bottom="20%" right="8%" />
         <div className="container">
-          <div className="section-heading">
-            <span className="script-title">Galeri Kenangan</span>
-            <div className="ornament-divider">
-              <span className="ornament-icon">✦</span>
+          <ScrollReveal>
+            <div className="section-heading">
+              <span className="script-title">Galeri Kenangan</span>
+              <div className="ornament-divider">
+                <span className="ornament-icon">✦</span>
+              </div>
+              <p className="subtitle">momen terindah kami</p>
             </div>
-            <p className="subtitle">momen terindah kami</p>
-          </div>
+          </ScrollReveal>
         </div>
-        <GalleryScroll />
+        <ScrollReveal delay={0.1}>
+          <GalleryScroll />
+        </ScrollReveal>
       </section>
 
       {/* ===== VIDEO ===== */}
@@ -92,23 +102,27 @@ export default function Home() {
         <FlowerDecor size="xs" blur="light" opacity={0.14} rotation={15} delay={1} bottom="25%" right="8%" />
         <FlowerDecor size="small" blur="heavy" opacity={0.08} rotation={180} delay={3} top="50%" right="18%" />
         <div className="container">
-          <div className="section-heading">
-            <span className="script-title">Video Kenangan</span>
-            <div className="ornament-divider">
-              <span className="ornament-icon">✦</span>
+          <ScrollReveal>
+            <div className="section-heading">
+              <span className="script-title">Video Kenangan</span>
+              <div className="ornament-divider">
+                <span className="ornament-icon">✦</span>
+              </div>
+              <p className="subtitle">momen yang terabadikan</p>
             </div>
-            <p className="subtitle">momen yang terabadikan</p>
-          </div>
-          <div className={styles.videoSection}>
-            <div className={styles.videoWrapper}>
-              <iframe
-                src={`https://www.youtube.com/embed/${siteConfig.youtubeVideoId}?rel=0`}
-                title="Video Kenangan KKN"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
+          </ScrollReveal>
+          <ScrollReveal delay={0.2}>
+            <div className={styles.videoSection}>
+              <div className={styles.videoWrapper}>
+                <iframe
+                  src={`https://www.youtube.com/embed/${siteConfig.youtubeVideoId}?rel=0`}
+                  title="Video Kenangan KKN"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
             </div>
-          </div>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -118,24 +132,28 @@ export default function Home() {
         <FlowerDecor size="small" opacity={0.14} rotation={200} delay={2} bottom="5%" right="5%" />
         <FlowerDecor size="xs" blur="light" opacity={0.16} rotation={130} delay={3} top="40%" left="8%" />
         <div className="container">
-          <div className="section-heading">
-            <span className="script-title">Posko Kami</span>
-            <div className="ornament-divider">
-              <span className="ornament-icon">✦</span>
+          <ScrollReveal>
+            <div className="section-heading">
+              <span className="script-title">Posko Kami</span>
+              <div className="ornament-divider">
+                <span className="ornament-icon">✦</span>
+              </div>
+              <p className="subtitle">{siteConfig.locationName}</p>
             </div>
-            <p className="subtitle">{siteConfig.locationName}</p>
-          </div>
-          <div className={styles.mapSection}>
-            <div className={styles.mapWrapper}>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.6809116985933!2d114.85904649999999!3d-8.4329625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd3d31f3d5c5cdf%3A0xd72a989f974ad2da!2sPosko%20KKN%20desa%20Pangyangan!5e0!3m2!1sid!2sid!4v1772456469637!5m2!1sid!2sid"
-                title="Lokasi Posko KKN"
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
+          </ScrollReveal>
+          <ScrollReveal delay={0.2}>
+            <div className={styles.mapSection}>
+              <div className={styles.mapWrapper}>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.6809116985933!2d114.85904649999999!3d-8.4329625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd3d31f3d5c5cdf%3A0xd72a989f974ad2da!2sPosko%20KKN%20desa%20Pangyangan!5e0!3m2!1sid!2sid!4v1772456469637!5m2!1sid!2sid"
+                  title="Lokasi Posko KKN"
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
             </div>
-          </div>
+          </ScrollReveal>
         </div>
       </section>
     </>
