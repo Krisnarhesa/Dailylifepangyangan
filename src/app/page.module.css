@@ -32,7 +32,7 @@
 }
 
 .heroTitle {
-  font-family: 'Dancing Script', cursive;
+  font-family: var(--font-dancing), cursive;
   font-size: clamp(3.5rem, 9vw, 7rem);
   font-weight: 700;
   color: #FFFADD;

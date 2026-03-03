@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap');
+/* Fonts loaded via next/font in layout.tsx */
 
 /* ===== CSS VARIABLES ===== */
 :root {
@@ -34,10 +34,10 @@
   --shadow-lg: 0 8px 40px rgba(42, 61, 26, 0.12);
   --shadow-gold: 0 0 20px rgba(139, 105, 20, 0.1);
 
-  /* Fonts */
-  --font-script: 'Great Vibes', cursive;
-  --font-serif: 'Playfair Display', serif;
-  --font-sans: 'Inter', sans-serif;
+  /* Fonts — overridden by next/font CSS variables on body */
+  --font-script: cursive;
+  --font-serif: serif;
+  --font-sans: sans-serif;
 
   /* Spacing */
   --section-padding: 80px 0;

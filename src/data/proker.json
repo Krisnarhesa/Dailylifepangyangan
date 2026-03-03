@@ -1,5 +1,89 @@
 [
   {
+    "id": "pembekalan-kkn",
+    "title": "Pembekalan KKN",
+    "division": "",
+    "description": "Kegiatan Pembekalan KKN",
+    "date": "13 Juni 2025",
+    "coverImage": "/images/proker/pembekalan-kkn/1.jpg",
+    "photos": [
+      "/images/proker/pembekalan-kkn/3.jpg",
+      "/images/proker/pembekalan-kkn/1.jpg",
+      "/images/proker/pembekalan-kkn/2.jpg"
+    ]
+  },
+  {
+    "id": "rapat-perdana",
+    "title": "Rapat Perdana",
+    "division": "",
+    "description": "Kegiatan Rapat Perdana",
+    "date": "15 Juni 2025",
+    "coverImage": "/images/proker/rapat-perdana/1.jpg",
+    "photos": [
+      "/images/proker/rapat-perdana/1.jpg",
+      "/images/proker/rapat-perdana/2.jpg",
+      "/images/proker/rapat-perdana/3.jpg"
+    ],
+    "videos": [
+      "/images/proker/rapat-perdana/1.mp4",
+      "/images/proker/rapat-perdana/2.mp4"
+    ]
+  },
+  {
+    "id": "rapat-dpl",
+    "title": "Rapat Bersama DPL",
+    "division": "",
+    "description": "Kegiatan Rapat Bersama Dosen Pembimbing Lapangan",
+    "date": "20 Juni 2025",
+    "coverImage": "/images/proker/rapat-dpl/3.jpg",
+    "photos": [
+      "/images/proker/rapat-dpl/3.jpg",
+      "/images/proker/rapat-dpl/2.jpg",
+      "/images/proker/rapat-dpl/1.jpg"
+    ]
+  },
+  {
+    "id": "survei-desa",
+    "title": "Survei Desa",
+    "division": "",
+    "description": "Kegiatan Survei Desa",
+    "date": "27 Juni 2025",
+    "coverImage": "/images/proker/survei-desa/1.jpg",
+    "photos": [
+      "/images/proker/survei-desa/1.jpg",
+      "/images/proker/survei-desa/2.jpg",
+      "/images/proker/survei-desa/3.jpg",
+      "/images/proker/survei-desa/4.jpg"
+    ],
+    "videos": [
+      "/images/proker/survei-desa/8.mp4",
+      "/images/proker/survei-desa/2.mp4",
+      "/images/proker/survei-desa/1.mp4",
+      "/images/proker/survei-desa/3.mp4",
+      "/images/proker/survei-desa/4.mp4",
+      "/images/proker/survei-desa/5.mp4",
+      "/images/proker/survei-desa/6.mp4",
+      "/images/proker/survei-desa/7.mp4"
+    ]
+  },
+  {
+    "id": "rapat-kedua",
+    "title": "Rapat Finalisasi Program Kerja",
+    "division": "",
+    "description": "Kegiatan Rapat Finalisasi Program Kerja",
+    "date": "5 Juli 2025",
+    "coverImage": "/images/proker/rapat-kedua/2.jpg",
+    "photos": [
+      "/images/proker/rapat-kedua/1.jpg",
+      "/images/proker/rapat-kedua/2.jpg",
+      "/images/proker/rapat-kedua/3.jpg"
+    ],
+    "videos": [
+      "/images/proker/rapat-kedua/1.mp4",
+      "/images/proker/rapat-kedua/2.mp4"
+    ]
+  },
+  {
     "id": "pembukaan-kkn",
     "title": "Pembukaan KKN",
     "division": "",

@@ -6,6 +6,13 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.playerHidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .playBtn {
@@ -87,6 +94,7 @@
 .entranceSubtitle {
   font-family: var(--font-sans);
   font-size: clamp(0.65rem, 2vw, 1rem);
+  font-weight: 1000;
   color: var(--text-secondary);
   letter-spacing: clamp(1px, 0.5vw, 3px);
   text-transform: uppercase;

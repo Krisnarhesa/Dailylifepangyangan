@@ -52,44 +52,44 @@ export default function BGMPlayer() {
     }
   };
 
-  // Show entrance overlay first
-  if (!entered) {
-    return (
-      <div className={`${styles.entranceOverlay} ${fadeOut ? styles.fadeOut : ''}`}>
-        <Image
-          src="/background.png"
-          alt=""
-          fill
-          sizes="100vw"
-          style={{ objectFit: 'cover' }}
-          priority
-        />
-        <div className={styles.entranceOverlayFilter} />
-        <h1 className={styles.entranceTitle}>Album Kenangan KKN</h1>
-        <p className={styles.entranceSubtitle}>{siteConfig.locationName} • {siteConfig.period}</p>
-        <div className="ornament-divider">
-          <span className="ornament-icon">✦</span>
+  return (
+    <>
+      {/* Entrance Overlay — always in DOM, hidden via CSS after enter */}
+      {!entered && (
+        <div className={`${styles.entranceOverlay} ${fadeOut ? styles.fadeOut : ''}`}>
+          <Image
+            src="/background.png"
+            alt=""
+            fill
+            sizes="100vw"
+            style={{ objectFit: 'cover' }}
+            priority
+          />
+          <div className={styles.entranceOverlayFilter} />
+          <h1 className={styles.entranceTitle}>Album Kenangan KKN</h1>
+          <p className={styles.entranceSubtitle}>{siteConfig.locationName} • {siteConfig.period}</p>
+          <div className="ornament-divider">
+            <span className="ornament-icon">✦</span>
+          </div>
+          <button className={styles.enterBtn} onClick={handleEnter}>
+            Masuk ke Album
+          </button>
         </div>
-        <button className={styles.enterBtn} onClick={handleEnter}>
-          Masuk ke Album
+      )}
+
+      {/* Floating music player — always in DOM */}
+      <div className={`${styles.playerWrapper} ${!entered ? styles.playerHidden : ''}`}>
+        <span className={styles.label}>
+          {playing ? '♪ Sedang Memutar' : '♪ Musik Mati'}
+        </span>
+        <button
+          className={`${styles.playBtn} ${playing ? styles.playing : ''}`}
+          onClick={toggleMusic}
+          aria-label={playing ? 'Pause music' : 'Play music'}
+        >
+          {playing ? '⏸' : '▶'}
         </button>
       </div>
-    );
-  }
-
-  // Floating music player
-  return (
-    <div className={styles.playerWrapper}>
-      <span className={styles.label}>
-        {playing ? '♪ Sedang Memutar' : '♪ Musik Mati'}
-      </span>
-      <button
-        className={`${styles.playBtn} ${playing ? styles.playing : ''}`}
-        onClick={toggleMusic}
-        aria-label={playing ? 'Pause music' : 'Play music'}
-      >
-        {playing ? '⏸' : '▶'}
-      </button>
-    </div>
+    </>
   );
 }

@@ -16,11 +16,11 @@ export default function ProkerPage() {
         <FlowerDecor size="small" opacity={0.18} rotation={260} delay={1} top="30%" left="8%" />
         <FlowerDecor size="xs" opacity={0.20} rotation={100} delay={3} top="50%" right="12%" />
         <div className="section-heading">
-          <span className="script-title">Program Kerja</span>
+          <span className="script-title">The Journey Begins</span>
           <div className="ornament-divider">
             <span className="ornament-icon">✦</span>
           </div>
-          <p className="subtitle">kegiatan selama kkn</p>
+          <p className="subtitle">Kegiatan Selama KKN</p>
         </div>
       </div>
 
