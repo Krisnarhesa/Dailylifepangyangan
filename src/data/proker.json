@@ -10,7 +10,8 @@
       "/images/proker/pembukaan-kkn/1.jpg"
     ],
     "videos": [
-      "/images/proker/pembukaan-kkn/1.mp4"
+      "/images/proker/pembukaan-kkn/1.mp4",
+      "/images/proker/pembukaan-kkn/2.mp4"
     ]
   },
   {
@@ -62,6 +63,10 @@
        "/images/proker/remaja/2.jpg",
       "/images/proker/remaja/11.jpg",
       "/images/proker/remaja/15.jpg"
+    ],
+    "videos": [
+      "/images/proker/remaja/1.mp4",
+      "/images/proker/remaja/2.mp4"
     ]
   }
 ]
