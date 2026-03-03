@@ -2,6 +2,7 @@
 import LazyImage from '@/components/LazyImage/LazyImage';
 import ScrollReveal from '@/components/ScrollReveal/ScrollReveal';
 import proker from '@/data/proker.json';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { useState } from 'react';
@@ -127,11 +128,13 @@ export default function ProkerDetailPage() {
                 playsInline
               />
             ) : (
-              /* eslint-disable-next-line @next/next/no-img-element */
-              <img
+              <Image
                 src={allMedia[lightboxIndex]}
                 alt={`${item.title} - ${lightboxIndex + 1}`}
                 className={styles.lightboxMedia}
+                fill
+                sizes="(max-width: 768px) 95vw, 80vw"
+                style={{ objectFit: 'contain' }}
               />
             )}
             <p className={styles.lightboxCaption}>

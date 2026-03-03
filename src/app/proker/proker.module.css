@@ -224,8 +224,9 @@
 }
 
 .lightboxContent {
-  max-width: 90vw;
-  max-height: 85vh;
+  position: relative;
+  width: 90vw;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;

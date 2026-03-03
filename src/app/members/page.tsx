@@ -2,6 +2,7 @@
 
 import FlowerDecor from '@/components/FlowerDecor/FlowerDecor';
 import members from '@/data/members.json';
+import Image from 'next/image';
 import { useState } from 'react';
 import styles from './members.module.css';
 
@@ -41,11 +42,14 @@ export default function MembersPage() {
             <p className="subtitle">Keluarga Besar KKN</p>
           </div>
           <div className={styles.groupPhotoWrap}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               src="/images/Team.png"
               alt="Foto Bersama KKN"
               className={styles.groupPhotoImg}
+              width={1200}
+              height={800}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
+              priority
             />
           </div>
         </div>
@@ -72,8 +76,7 @@ export default function MembersPage() {
             >
               <div className={styles.memberPhoto}>
                 {member.photo ? (
-                  /* eslint-disable-next-line @next/next/no-img-element */
-                  <img src={member.photo} alt={member.name} />
+                  <Image src={member.photo} alt={member.name} fill sizes="(max-width: 768px) 45vw, 180px" style={{ objectFit: 'cover' }} />
                 ) : (
                   <div className={styles.photoPlaceholder}>
                     {member.name.charAt(0)}
@@ -128,8 +131,7 @@ export default function MembersPage() {
             </button>
             <div className={styles.modalPhoto}>
               {selectedMember.photo ? (
-                /* eslint-disable-next-line @next/next/no-img-element */
-                <img src={selectedMember.photo} alt={selectedMember.name} />
+                <Image src={selectedMember.photo} alt={selectedMember.name} fill sizes="(max-width: 768px) 90vw, 400px" style={{ objectFit: 'cover' }} />
               ) : (
                 <div className={styles.photoPlaceholder} style={{ fontSize: '5rem' }}>
                   {selectedMember.name.charAt(0)}
