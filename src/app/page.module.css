@@ -14,15 +14,19 @@
 .heroBg {
   position: absolute;
   inset: 0;
-  background: 
-    linear-gradient(180deg, rgba(255, 250, 221, 0.15) 0%, rgba(255, 250, 221, 0.45) 60%, var(--bg-main) 100%),
-    url('/cover.png') center/cover no-repeat;
   z-index: 0;
+}
+
+.heroBgOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255, 250, 221, 0.15) 0%, rgba(255, 250, 221, 0.45) 60%, var(--bg-main) 100%);
+  z-index: 1;
 }
 
 .heroContent {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   max-width: 700px;
   padding: 0 24px;
 }

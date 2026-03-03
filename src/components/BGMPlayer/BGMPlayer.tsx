@@ -1,6 +1,7 @@
 'use client';
 
 import siteConfig from '@/data/siteConfig.json';
+import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import styles from './BGMPlayer.module.css';
 
@@ -55,6 +56,15 @@ export default function BGMPlayer() {
   if (!entered) {
     return (
       <div className={`${styles.entranceOverlay} ${fadeOut ? styles.fadeOut : ''}`}>
+        <Image
+          src="/background.png"
+          alt=""
+          fill
+          sizes="100vw"
+          style={{ objectFit: 'cover' }}
+          priority
+        />
+        <div className={styles.entranceOverlayFilter} />
         <h1 className={styles.entranceTitle}>Album Kenangan KKN</h1>
         <p className={styles.entranceSubtitle}>{siteConfig.locationName} • {siteConfig.period}</p>
         <div className="ornament-divider">

@@ -4,6 +4,7 @@ import FlowerDecor from '@/components/FlowerDecor/FlowerDecor';
 import GalleryScroll from '@/components/GalleryScroll/GalleryScroll';
 import ScrollReveal from '@/components/ScrollReveal/ScrollReveal';
 import siteConfig from '@/data/siteConfig.json';
+import Image from 'next/image';
 import Link from 'next/link';
 import styles from './page.module.css';
 
@@ -12,7 +13,17 @@ export default function Home() {
     <>
       {/* ===== HERO ===== */}
       <section className={styles.hero}>
-        <div className={styles.heroBg}></div>
+        <div className={styles.heroBg}>
+          <Image
+            src="/cover.png"
+            alt=""
+            fill
+            sizes="100vw"
+            style={{ objectFit: 'cover' }}
+            priority
+          />
+          <div className={styles.heroBgOverlay} />
+        </div>
 
         {/* Scattered flower background */}
         <FlowerDecor size="xlarge" blur="medium" opacity={0.18} rotation={25} delay={0} top="2%" right="0%" />
