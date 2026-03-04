@@ -292,9 +292,12 @@
 }
 
 .modalName {
-  font-family: var(--font-script);
-  font-size: 2rem;
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 700;
   color: var(--text-gold);
+  letter-spacing: 1px;
+  text-transform: capitalize;
   margin-bottom: 4px;
 }
 

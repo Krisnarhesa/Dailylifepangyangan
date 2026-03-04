@@ -15,6 +15,17 @@ interface Member {
   quote: string;
 }
 
+function styledName(str: string) {
+  const words = str.toLowerCase().split(' ');
+  return words.map((word, i) => (
+    <span key={i}>
+      {i > 0 && ' '}
+      <span className="script-initial">{word.charAt(0).toUpperCase()}</span>
+      {word.slice(1)}
+    </span>
+  ));
+}
+
 export default function MembersPage() {
   const [selectedMember, setSelectedMember] = useState<Member | null>(null);
 
@@ -84,7 +95,7 @@ export default function MembersPage() {
                 )}
               </div>
               <div className={styles.memberInfo}>
-                <h3 className={styles.memberName}>{member.name}</h3>
+                <h3 className={styles.memberName}>{styledName(member.name)}</h3>
                 <p className={styles.memberRole}>{member.role}</p>
               </div>
             </div>
@@ -139,7 +150,7 @@ export default function MembersPage() {
               )}
             </div>
             <div className={styles.modalInfo}>
-              <h2 className={styles.modalName}>{selectedMember.name}</h2>
+              <h2 className={styles.modalName}>{styledName(selectedMember.name)}</h2>
               <p className={styles.modalRole}>{selectedMember.role}</p>
               <p className={styles.modalDivision}>Divisi {selectedMember.division}</p>
               <p className={styles.modalQuote}>

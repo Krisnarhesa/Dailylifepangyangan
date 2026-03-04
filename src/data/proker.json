@@ -84,10 +84,25 @@
     ]
   },
   {
+    "id": "pelepasan-kkn",
+    "title": "Pelepasan KKN",
+    "division": "",
+    "description": "Kegiatan Pelepasan KKN Udayana Periode XXXI",
+    "date": "11 Juli 2025",
+    "coverImage": "/images/proker/pelepasan-kkn/1.jpg",
+    "photos": [
+      "/images/proker/pelepasan-kkn/1.jpg"
+    ],
+    "videos": [
+      "/images/proker/pelepasan-kkn/1.mp4",
+      "/images/proker/pelepasan-kkn/2.mp4"
+    ]
+  },
+  {
     "id": "pembukaan-kkn",
     "title": "Pembukaan KKN",
     "division": "",
-    "description": "Kegiatan Pembukaan KKN",
+    "description": "Kegiatan Pembukaan KKN di Kantor Desa Pangyangan",
     "date": "15 Juli 2025",
     "coverImage": "/images/proker/pembukaan-kkn/1.jpg",
     "photos": [

@@ -251,6 +251,13 @@ img {
   transform: translateY(0);
 }
 
+/* ===== SCRIPT INITIAL (nama member) ===== */
+.script-initial {
+  font-family: var(--font-script);
+  font-size: 1.35em;
+  line-height: 1;
+}
+
 /* ===== BUTTONS ===== */
 .btn-gold {
   display: inline-flex;

@@ -10,7 +10,7 @@ export default function Footer() {
       <FlowerDecor size="small" blur="medium" opacity={0.10} rotation={310} delay={3} bottom="-10%" right="2%" />
 
       <div className={styles.footerInner}>
-        <p className={styles.footerTitle}>Our Journey</p>
+        <p className={styles.footerTitle}>The End of Our Journey</p>
         <p className={styles.footerLocation}>
           {siteConfig.universityName} &bull; {siteConfig.locationName}
         </p>
