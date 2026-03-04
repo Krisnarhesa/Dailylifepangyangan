@@ -20,7 +20,7 @@ export default function ProkerPage() {
           <div className="ornament-divider">
             <span className="ornament-icon">✦</span>
           </div>
-          <p className="subtitle">Kegiatan Selama KKN</p>
+          <p className="subtitle">Dokumentasi Kegiatan KKN</p>
         </div>
       </div>
 

@@ -46,7 +46,7 @@
     "id": "survei-desa",
     "title": "Survei Desa",
     "division": "",
-    "description": "Kegiatan Survei Desa",
+    "description": "Kegiatan Survei Desa & Survei Posko KKN",
     "date": "27 Juni 2025",
     "coverImage": "/images/proker/survei-desa/1.jpg",
     "photos": [
@@ -89,20 +89,51 @@
     "division": "",
     "description": "Kegiatan Pelepasan KKN Udayana Periode XXXI",
     "date": "11 Juli 2025",
-    "coverImage": "/images/proker/pelepasan-kkn/1.jpg",
+    "coverImage": "/images/proker/pelepasan-kkn/3.jpeg",
     "photos": [
-      "/images/proker/pelepasan-kkn/1.jpg"
+      "/images/proker/pelepasan-kkn/1.jpeg",
+      "/images/proker/pelepasan-kkn/2.jpeg",
+      "/images/proker/pelepasan-kkn/3.jpeg",
+      "/images/proker/pelepasan-kkn/4.jpeg",
+      "/images/proker/pelepasan-kkn/5.jpeg",
+      "/images/proker/pelepasan-kkn/6.jpeg"
+    ]
+  },
+  {
+    "id": "day-1-kkn",
+    "title": "Day 1 KKN",
+    "division": "",
+    "description": "Kegiatan Hari Pertama KKN",
+    "date": "13 Juli 2025",
+    "coverImage": "/images/proker/day-1-kkn/1.jpeg",
+    "photos": [
+      "/images/proker/day-1-kkn/1.jpeg"
     ],
     "videos": [
-      "/images/proker/pelepasan-kkn/1.mp4",
-      "/images/proker/pelepasan-kkn/2.mp4"
+      "/images/proker/day-1-kkn/1.mp4",
+      "/images/proker/day-1-kkn/2.mp4"
+    ]
+  },
+  {
+    "id": "matur-piuning",
+    "title": "Matur Piuning",
+    "division": "",
+    "description": "Kegiatan Matur Piuning",
+    "date": "14 Juli 2025",
+    "coverImage": "/images/proker/matur-piuning/1.jpeg",
+    "photos": [
+      "/images/proker/matur-piuning/1.jpeg",
+      "/images/proker/matur-piuning/2.jpeg"
+    ],
+    "videos": [
+      "/images/proker/matur-piuning/1.mp4"
     ]
   },
   {
     "id": "pembukaan-kkn",
-    "title": "Pembukaan KKN",
+    "title": "Penerimaan Mahasiswa KKN",
     "division": "",
-    "description": "Kegiatan Pembukaan KKN di Kantor Desa Pangyangan",
+    "description": "Kegiatan Penerimaan Mahasiswa KKN di Kantor Desa Pangyangan",
     "date": "15 Juli 2025",
     "coverImage": "/images/proker/pembukaan-kkn/1.jpg",
     "photos": [
@@ -117,7 +148,7 @@
     "id": "pendampingan-silat",
     "title": "Pendampingan Silat",
     "division": "",
-    "description": "Pendampingan silat anak anak desa pangyangan",
+    "description": "Kegiatan Pendampingan Silat Anak Anak Desa Pangyangan",
     "date": "16 Juli 2025",
     "coverImage": "/images/proker/pendampingan-silat/3.jpg",
     "photos": [
@@ -127,11 +158,30 @@
     ]
   },
   {
+    "id": "gotongroyong-surveikkdampingan",
+    "title": "Gotong Royong & Survei KK Dampingan",
+    "division": "",
+    "description": "Kegiatan Gotong Royong di Kantor Desa Pangyangan & Survei KK Dampingan",
+    "date": "17 Juli 2025",
+    "coverImage": "/images/proker/gotongroyong-surveikkdampingan/2.jpeg",
+    "photos": [
+      "/images/proker/gotongroyong-surveikkdampingan/2.jpeg",
+      "/images/proker/gotongroyong-surveikkdampingan/1.jpeg"
+    ],
+    "videos": [
+      "/images/proker/gotongroyong-surveikkdampingan/1.mp4",
+      "/images/proker/gotongroyong-surveikkdampingan/2.mp4",
+      "/images/proker/gotongroyong-surveikkdampingan/3.mp4",
+      "/images/proker/gotongroyong-surveikkdampingan/4.mp4",
+      "/images/proker/gotongroyong-surveikkdampingan/5.mp4"
+    ]
+  },
+  {
     "id": "posyandu-lansia",
     "title": "Posyandu Lansia",
     "division": "Kesehatan Masyarakat",
-    "description": "Posyandu lansia adalah kegiatan yang diadakan untuk memantau kesehatan para lansia di desa pangyangan",
-    "date": "18 Juli 2025",
+    "description": "Kegiatan Posyandu Lansia adalah kegiatan yang diadakan untuk memantau kesehatan para lansia di desa pangyangan",
+    "date": "17 Juli 2025",
     "coverImage": "/images/proker/lansia/2.jpg",
     "photos": [
       "/images/proker/lansia/2.jpg",
@@ -139,12 +189,12 @@
       "/images/proker/lansia/3.jpg"
     ]
   },
-   {
+  {
     "id": "posyandu-remaja",
     "title": "Posyandu Remaja & Ibu Hamil",
     "division": "Kesehatan Masyarakat",
-    "description": "Posyandu remaja & ibu hamil adalah kegiatan yang diadakan untuk memantau kesehatan para remaja dan ibu hamil di desa pangyangan",
-    "date": "19 Juli 2025",
+    "description": "Kegiatan Posyandu Remaja & Ibu Hamil adalah kegiatan yang diadakan untuk memantau kesehatan para remaja dan ibu hamil di desa pangyangan",
+    "date": "18 Juli 2025",
     "coverImage": "/images/proker/remaja/8.jpg",
     "photos": [
       "/images/proker/remaja/1.jpg",
@@ -165,7 +215,47 @@
     ],
     "videos": [
       "/images/proker/remaja/1.mp4",
-      "/images/proker/remaja/2.mp4"
+      "/images/proker/remaja/2.mp4",
+      "/images/proker/remaja/3.mp4"
+    ]
+  },
+  {
+    "id": "pemupukan-organik-pohon-kelapa",
+    "title": "Pemupukan Organik Pohon Kelapa",
+    "division": "",
+    "description": "Kegiatan Pemupukan Organik Pohon Kelapa",
+    "date": "19 Juli 2025",
+    "coverImage": "/images/proker/pemupukan-organik-pohon-kelapa/1.jpg",
+    "photos": [
+      "/images/proker/pemupukan-organik-pohon-kelapa/1.jpg",
+      "/images/proker/pemupukan-organik-pohon-kelapa/2.jpg",
+      "/images/proker/pemupukan-organik-pohon-kelapa/3.jpg",
+      "/images/proker/pemupukan-organik-pohon-kelapa/4.jpg"
+    ],
+    "videos": [
+      "/images/proker/pemupukan-organik-pohon-kelapa/1.mp4",
+      "/images/proker/pemupukan-organik-pohon-kelapa/2.mp4",
+      "/images/proker/pemupukan-organik-pohon-kelapa/3.mp4",
+      "/images/proker/pemupukan-organik-pohon-kelapa/4.mp4",
+      "/images/proker/pemupukan-organik-pohon-kelapa/5.mp4",
+      "/images/proker/pemupukan-organik-pohon-kelapa/6.mp4",
+      "/images/proker/pemupukan-organik-pohon-kelapa/7.mp4"
+    ]
+  },
+  {
+    "id": "rip-cimeng",
+    "title": "Rest in Peace Cimeng",
+    "division": "",
+    "description": "Selamat jalan, Cimeng. Meonganmu akan selalu kami ingat",
+    "date": "12 Agustus 2025",
+    "coverImage": "/images/proker/rip-cimeng/2.jpeg",
+    "photos": [
+      "/images/proker/rip-cimeng/1.jpeg",
+      "/images/proker/rip-cimeng/2.jpeg",
+      "/images/proker/rip-cimeng/3.jpeg"
+    ],
+    "videos": [
+      "/images/proker/rip-cimeng/1.mp4" 
     ]
   }
 ]
