@@ -28,21 +28,42 @@ function styledName(str: string) {
 }
 
 const NOMINATION_CATEGORIES = [
-  { id: 'rajin', name: 'The Most Rajin', desc: 'Paling tekun & rajin' },
-  { id: 'santuy', name: 'The Most Santuy', desc: 'Paling santai dalam segala situasi' },
+  // Original / Kategori Netral:
+  { id: 'rajin', name: 'The Most Rajin', desc: 'Paling tekun & rajin dalam segala proker' },
+  { id: 'santuy', name: 'The Most Santuy', desc: 'Paling santai dan tenang dalam segala situasi' },
   { id: 'receh', name: 'The Most Receh', desc: 'Paling mudah ketawa/humoris' },
-  { id: 'photogenic', name: 'The Most Photogenic', desc: 'Selalu on-point di kamera' },
-  { id: 'multitasking', name: 'The Most Multitasking', desc: 'Bisa ngerjain banyak hal sekaligus' },
-  { id: 'fashionable', name: 'The Most Fashionable', desc: 'Pakaiannya paling stylish' },
-  { id: 'tukang-tidur', name: 'The Most Tukang Tidur', desc: 'Pelopor rebahan & tidur' },
-  { id: 'kalong', name: 'The Most Kalong', desc: 'Sering begadang/hidup di malam hari' },
-  { id: 'bucin', name: 'The Most Bucin', desc: 'Paling bucin/sering teleponan sama pacar' },
-  { id: 'hyperaktif', name: 'The Most Gak Bisa Diem', desc: 'Paling hiperaktif & energik' },
-  { id: 'update', name: 'The Most Update', desc: 'Paling tahu gosip/info terbaru' },
-  { id: 'sabar', name: 'The Most Sabar', desc: 'Paling sabar ngadepin masalah' },
-  { id: 'jago-masak', name: 'The Most Jago Masak', desc: 'Koki andalan posko' },
-  { id: 'problem-solver', name: 'The Most Problem Solver', desc: 'Solutif di segala kondisi' },
-  { id: 'telat', name: 'The Most Telat', desc: 'Langganan telat kumpul' }
+  { id: 'photogenic', name: 'The Most Photogenic', desc: 'Selalu on-point di kamera, fotonya bagus-bagus' },
+  { id: 'multitasking', name: 'The Most Multitasking', desc: 'Bisa ngerjain banyak hal sekaligus tanpa panik' },
+  { id: 'fashionable', name: 'The Most Fashionable', desc: 'Pakaiannya paling stylish di posko' },
+  { id: 'update', name: 'The Most Update', desc: 'Paling tahu informasi terbaru atau info kampus' },
+  { id: 'problem-solver', name: 'The Most Problem Solver', desc: 'Selalu solutif dan bisa diandalkan di segala kondisi' },
+
+  // Kategori Kocak & Drama KKN:
+  { id: 'beban-kelompok', name: 'The Most Beban Kelompok', desc: 'Sering ngilang mendadak pas proker lagi jalan' },
+  { id: 'rawan-cinlok', name: 'The Most Rawan Cinlok', desc: 'Paling sering modus ke warga lokal atau teman seposko' },
+  { id: 'kang-gosip', name: 'The Most Kang Gosip', desc: 'Lambe Turah-nya posko, tahu silsilah keluarga Pak Kades' },
+  { id: 'jam-karet', name: 'The Most Jam Karet', desc: 'Disuruh kumpul jam 7, baru mandi jam 8, dateng jam 9' },
+  { id: 'tukang-tidur', name: 'The Most Tukang Tidur', desc: 'Nempel dinding dikit pelor, 3 hari proker 4 hari molor' },
+  { id: 'jago-masak', name: 'The Most MasterChef', desc: 'Penyelamat pertengahan bulan buat anak-anak yang kelaparan' },
+  { id: 'kalong', name: 'The Most Manusia Kalong', desc: 'Melek pas malam buat begadang, baru tidur setelah subuh' },
+  { id: 'misterius', name: 'The Most Misterius', desc: 'Datang tak diundang, pulang tak pamit, tahu-tahu ngilang bawa motor' },
+  { id: 'bucin', name: 'The Most Bucin Maksimal', desc: 'Pojokan teras nelpon ayang terus 24/7 sambil senyum sendiri' },
+  { id: 'tumbal-lpj', name: 'The Most Tumbal LPJ', desc: 'Ngetik Laporan Pertanggungjawaban sendirian sampai begadang' },
+  { id: 'hedon', name: 'The Most Si Paling Hedon', desc: 'KKN ngeluh capek, tapi checkout Shopee dan paket kurir jalan terus' },
+  { id: 'sabar', name: 'The Most Paling Sabar', desc: 'Kerjanya ngelus dada doang ngadepin kelakuan anak posko yang bar-bar' },
+  { id: 'overthinking', name: 'The Most Overthinking', desc: 'Mikirin proker mulu, "Duh besok acara lancar ngga ya?", sampai susah tidur' },
+  { id: 'seksi-ribet', name: 'The Most Seksi Ribet', desc: 'Dikit-dikit "Eh foto dulu dong buat bahan feed IG dan dokumentasi LPJ!"' },
+  { id: 'ambis', name: 'The Most Ambis Proker', desc: 'Belum nanya persetujuan desa udah bikin draft program kerja lengkap sama RAB' },
+  { id: 'pawon', name: 'The Most Kang Ngopi', desc: 'Candu kopi hitam, nggak bisa nyangkul kalau pagi belum ngopi' },
+  { id: 'melokal', name: 'The Most Paling Melokal', desc: 'Saking akrabnya, sampai hapal nama kambing tetangga & diangkat anak kades' },
+  { id: 'sapu', name: 'The Most Si Paling Bersih', desc: 'Bawaannya ngomel mulu lihat posko berantakan, tukang bersih-bersih tengah malem' },
+  { id: 'suhu', name: 'The Most Suhu Asmara', desc: 'Tempat curhat paling manjur kalau ada prahara asmara antar teman seposko' },
+  { id: 'asbun', name: 'The Most Asbun', desc: 'Asal Bunyi, celetukannya random banget tanpa disaring dulu bikin ngakak' },
+  { id: 'kambing-hitam', name: 'The Most Kambing Hitam', desc: 'Selalu jadi sasaran dituduh kalau ada barang hilang atau makanan ludes di kulkas' },
+  { id: 'anak-ilang', name: 'The Most Anak Ilang', desc: 'Sering nyasar pas disuruh belanja ke pasar kecamatan atau pencarian lokasi survey' },
+  { id: 'sambat-batin', name: 'The Most Sambat Batin', desc: 'Kelihatan senyum terus di depan warga, aslinya di posko ngeluh meledak-ledak' },
+  { id: 'kang-php', name: 'The Most Kang PHP', desc: '"Iya OTW posko" = OTW mandi. "Udah di jalan" = Baru keluarin motor' },
+  { id: 'sesepuh', name: 'The Most Sesepuh Posko', desc: 'Omongannya paling bijak, sering dimintai fatwa sama teman-teman' }
 ];
 
 export default function MembersPage() {
