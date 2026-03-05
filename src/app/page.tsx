@@ -3,6 +3,7 @@
 import FlowerDecor from '@/components/FlowerDecor/FlowerDecor';
 import GalleryScroll from '@/components/GalleryScroll/GalleryScroll';
 import ScrollReveal from '@/components/ScrollReveal/ScrollReveal';
+import TypingText from '@/components/TypingText/TypingText';
 import siteConfig from '@/data/siteConfig.json';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -34,12 +35,18 @@ export default function Home() {
         <FlowerDecor size="medium" blur="heavy" opacity={0.08} rotation={50} delay={5} top="35%" right="20%" />
 
         <div className={styles.heroContent}>
-          <h1 className={styles.heroTitle}>Ribuan Memori</h1>
+          <TypingText
+            tagName="h1"
+            className={styles.heroTitle}
+            text="Ribuan Memori"
+            speed={80}
+            showCursor={true}
+          />
           <p className={styles.heroSubtitle}>
             {siteConfig.locationName} &bull; {siteConfig.universityName}
           </p>
           <p className={styles.heroTagline}>
-            &ldquo;{siteConfig.heroTagline}&rdquo;
+            &ldquo;<TypingText tagName="span" text={siteConfig.heroTagline} speed={30} delay={1800} />&rdquo;
           </p>
           <div className={styles.heroActions}>
             <Link href="/members" className="btn-gold">
@@ -72,12 +79,12 @@ export default function Home() {
           </ScrollReveal>
           <ScrollReveal delay={0.2}>
             <div className={styles.sambutan}>
-              <p className={styles.sambutanText}>
-                Selamat datang di album kenangan kami. Kuliah Kerja Nyata (KKN) adalah momen yang tak
-                terlupakan sebuah perjalanan penuh pelajaran, kebersamaan, dan cerita yang membekas
-                di hati. Semoga website ini bisa menjadi wadah untuk mengenang setiap tawa, peluh, dan
-                senyuman selama kami mengabdi di {siteConfig.locationName}.
-              </p>
+              <TypingText
+                tagName="p"
+                className={styles.sambutanText}
+                text={`Selamat datang di album kenangan kami. Kuliah Kerja Nyata (KKN) adalah momen yang tak terlupakan sebuah perjalanan penuh pelajaran, kebersamaan, dan cerita yang membekas di hati. Semoga website ini bisa menjadi wadah untuk mengenang setiap tawa, peluh, dan senyuman selama kami mengabdi di ${siteConfig.locationName}.`}
+                speed={50}
+              />
             </div>
           </ScrollReveal>
         </div>

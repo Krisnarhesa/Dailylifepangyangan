@@ -1,12 +1,13 @@
 'use client';
 
+import { useAppContext } from '@/components/AppContext/AppContext';
 import siteConfig from '@/data/siteConfig.json';
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import styles from './BGMPlayer.module.css';
 
 export default function BGMPlayer() {
-  const [entered, setEntered] = useState(false);
+  const { entered, setEntered } = useAppContext();
   const [playing, setPlaying] = useState(false);
   const [fadeOut, setFadeOut] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);

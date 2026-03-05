@@ -1,3 +1,4 @@
+import { AppProvider } from "@/components/AppContext/AppContext";
 import BGMPlayer from "@/components/BGMPlayer/BGMPlayer";
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
@@ -50,12 +51,14 @@ export default function RootLayout({
   return (
     <html lang="id">
       <body className={`${inter.variable} ${greatVibes.variable} ${playfairDisplay.variable} ${dancingScript.variable}`}>
-        <BGMPlayer />
-        <Navbar />
-        <main style={{ paddingTop: '72px' }}>
-          {children}
-        </main>
-        <Footer />
+        <AppProvider>
+          <BGMPlayer />
+          <Navbar />
+          <main style={{ paddingTop: '72px' }}>
+            {children}
+          </main>
+          <Footer />
+        </AppProvider>
         <Analytics />
         <SpeedInsights />
       </body>

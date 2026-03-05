@@ -1,0 +1,17 @@
+.typingContainer {
+  display: inline;
+}
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  animation: blink 1s step-end infinite;
+  margin-left: 2px;
+  opacity: 0.8;
+  font-weight: 300;
+}
+
+@keyframes blink {
+  from, to { opacity: 0; }
+  50% { opacity: 1; }
+}
