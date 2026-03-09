@@ -21,7 +21,7 @@ export default function Navbar() {
   const navItems = [
     { href: '/', label: 'Beranda' },
     { href: '/members', label: 'Anggota' },
-    { href: '/proker', label: 'Kegiatan' },
+    { href: '/kegiatan', label: 'Kegiatan' },
   ];
 
   return (

@@ -38,7 +38,7 @@ export default function ProkerDetailPage() {
     return (
       <div className={styles.emptyState}>
         <p>Kegiatan tidak ditemukan.</p>
-        <Link href="/proker" className="btn-outline" style={{ marginTop: '24px', display: 'inline-block' }}>
+        <Link href="/kegiatan" className="btn-outline" style={{ marginTop: '24px', display: 'inline-block' }}>
           ← Kembali ke Kegiatan
         </Link>
       </div>
@@ -49,7 +49,7 @@ export default function ProkerDetailPage() {
     <>
       <ScrollReveal>
         <div className={styles.detailHeader}>
-          <Link href="/proker" className={styles.backLink}>
+          <Link href="/kegiatan" className={styles.backLink}>
             ← Kembali ke Kegiatan
           </Link>
           <h1 className={styles.detailTitle}>{item.title}</h1>
@@ -64,35 +64,46 @@ export default function ProkerDetailPage() {
       <div className="container">
         {allMedia.length > 0 ? (
           <div className={styles.galleryGrid}>
-            {allMedia.map((src, index) => (
-              <ScrollReveal key={index} delay={index * 0.05}>
-                <div
-                  className={styles.galleryItem}
-                  onClick={() => setLightboxIndex(index)}
-                >
-                  {isVideo(src) ? (
-                    <video
-                      src={src}
-                      className={styles.galleryMedia}
-                      muted
-                      playsInline
-                      preload="metadata"
-                      onMouseOver={(e) => (e.target as HTMLVideoElement).play()}
-                      onMouseOut={(e) => {
-                        const v = e.target as HTMLVideoElement;
-                        v.pause();
-                        v.currentTime = 0;
-                      }}
-                    />
-                  ) : (
-                    <LazyImage src={src} alt={`${item.title} - ${index + 1}`} className={styles.galleryMedia} />
-                  )}
-                  {isVideo(src) && (
-                    <div className={styles.videoIndicator}>▶</div>
-                  )}
-                </div>
-              </ScrollReveal>
-            ))}
+            {allMedia.map((src, index) => {
+              const isVid = isVideo(src);
+              return (
+                <ScrollReveal key={index} delay={index * 0.05}>
+                  <div
+                    className={styles.galleryItem}
+                    onClick={() => setLightboxIndex(index)}
+                  >
+                    <div className={styles.galleryMediaWrap}>
+                      {isVid ? (
+                        <video
+                          src={src}
+                          className={styles.galleryMedia}
+                          muted
+                          playsInline
+                          preload="metadata"
+                          onMouseOver={(e) => (e.target as HTMLVideoElement).play()}
+                          onMouseOut={(e) => {
+                            const v = e.target as HTMLVideoElement;
+                            v.pause();
+                            v.currentTime = 0;
+                          }}
+                        />
+                      ) : (
+                        <LazyImage src={src} alt={`${item.title} - ${index + 1}`} className={styles.galleryMedia} />
+                      )}
+                      {isVid && (
+                        <div className={styles.videoIndicator}>▶</div>
+                      )}
+                    </div>
+                    <div className={styles.galleryCaptionBar}>
+                      <span className={styles.galleryType}>{isVid ? 'Video' : 'Foto'}</span>
+                      <span className={styles.galleryIndex}>
+                        {index + 1} / {allMedia.length}
+                      </span>
+                    </div>
+                  </div>
+                </ScrollReveal>
+              );
+            })}
           </div>
         ) : (
           <div className={styles.emptyState}>

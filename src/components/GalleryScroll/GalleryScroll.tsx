@@ -63,24 +63,30 @@ export default function GalleryScroll() {
     return shuffled;
   }, []);
 
-  // Split into 3 rows
+  // Split into 3 horizontal rows
   const rowSize = Math.ceil(allPhotos.length / 3);
   const row1 = allPhotos.slice(0, rowSize);
   const row2 = allPhotos.slice(rowSize, rowSize * 2);
   const row3 = allPhotos.slice(rowSize * 2);
 
-  const renderRow = (photos: typeof row1, key: string, direction: string) => (
+  const renderRow = (photos: typeof row1, key: string, direction: 'left' | 'right', speed: 'slow' | 'medium' | 'fast') => (
     <div className={styles.scrollRow}>
-      <div className={`${styles.scrollTrack} ${direction === 'left' ? styles.scrollLeft : styles.scrollRight}`}>
+      <div
+        className={[
+          styles.scrollTrack,
+          direction === 'left' ? styles.scrollLeft : styles.scrollRight,
+          speed === 'slow' ? styles.scrollSlow : speed === 'fast' ? styles.scrollFast : styles.scrollMedium,
+        ].join(' ')}
+      >
         {[...photos, ...photos].map((photo, i) => (
-          <Link
-            key={`${key}-${i}`}
-            href={`/proker/${photo.id}`}
-            className={styles.scrollItem}
-          >
-            <LazyImage src={photo.src} alt={photo.title} className={styles.scrollImg} />
-            <div className={styles.itemOverlay}>
-              <span>{photo.title}</span>
+          <Link key={`${key}-${i}`} href={`/kegiatan/${photo.id}`} className={styles.scrollItem}>
+            <div className={styles.polaroidCard}>
+              <div className={styles.polaroidImageWrapper}>
+                <LazyImage src={photo.src} alt={photo.title} className={styles.scrollImg} />
+              </div>
+              <div className={styles.polaroidCaption}>
+                <span>{photo.title}</span>
+              </div>
             </div>
           </Link>
         ))}
@@ -90,9 +96,9 @@ export default function GalleryScroll() {
 
   return (
     <div className={styles.scrollContainer}>
-      {renderRow(row1, 'r1', 'left')}
-      {renderRow(row2, 'r2', 'right')}
-      {renderRow(row3, 'r3', 'left')}
+      {renderRow(row1, 'r1', 'left', 'slow')}
+      {renderRow(row2, 'r2', 'right', 'medium')}
+      {renderRow(row3, 'r3', 'left', 'fast')}
     </div>
   );
 }

@@ -17,22 +17,70 @@ export default function Home() {
         <div className={styles.heroBg}>
           <Image
             src="/cover.png"
-            alt=""
+            alt={`Suasana KKN di ${siteConfig.locationName}`}
             fill
             sizes="100vw"
-            style={{ objectFit: 'cover' }}
+            style={{ objectFit: "cover" }}
             priority
           />
           <div className={styles.heroBgOverlay} />
         </div>
 
         {/* Scattered flower background */}
-        <FlowerDecor size="xlarge" blur="medium" opacity={0.18} rotation={25} delay={0} top="2%" right="0%" />
-        <FlowerDecor size="large" blur="medium" opacity={0.14} rotation={70} delay={2} bottom="5%" left="2%" />
-        <FlowerDecor size="medium" blur="light" opacity={0.12} rotation={140} delay={4} top="15%" left="5%" />
-        <FlowerDecor size="small" blur="medium" opacity={0.10} rotation={200} delay={1} top="60%" right="8%" />
-        <FlowerDecor size="xs" blur="light" opacity={0.15} rotation={310} delay={3} bottom="20%" left="15%" />
-        <FlowerDecor size="medium" blur="heavy" opacity={0.08} rotation={50} delay={5} top="35%" right="20%" />
+        <FlowerDecor
+          size="xlarge"
+          blur="medium"
+          opacity={0.18}
+          rotation={25}
+          delay={0}
+          top="2%"
+          right="0%"
+        />
+        <FlowerDecor
+          size="large"
+          blur="medium"
+          opacity={0.14}
+          rotation={70}
+          delay={2}
+          bottom="5%"
+          left="2%"
+        />
+        <FlowerDecor
+          size="medium"
+          blur="light"
+          opacity={0.12}
+          rotation={140}
+          delay={4}
+          top="15%"
+          left="5%"
+        />
+        <FlowerDecor
+          size="small"
+          blur="medium"
+          opacity={0.1}
+          rotation={200}
+          delay={1}
+          top="60%"
+          right="8%"
+        />
+        <FlowerDecor
+          size="xs"
+          blur="light"
+          opacity={0.15}
+          rotation={310}
+          delay={3}
+          bottom="20%"
+          left="15%"
+        />
+        <FlowerDecor
+          size="medium"
+          blur="heavy"
+          opacity={0.08}
+          rotation={50}
+          delay={5}
+          top="35%"
+          right="20%"
+        />
 
         <div className={styles.heroContent}>
           <TypingText
@@ -46,14 +94,21 @@ export default function Home() {
             {siteConfig.locationName} &bull; {siteConfig.universityName}
           </p>
           <p className={styles.heroTagline}>
-            &ldquo;<TypingText tagName="span" text={siteConfig.heroTagline} speed={30} delay={1800} />&rdquo;
+            &ldquo;
+            <TypingText
+              tagName="span"
+              text={siteConfig.heroTagline}
+              speed={30}
+              delay={1800}
+            />
+            &rdquo;
           </p>
           <div className={styles.heroActions}>
             <Link href="/members" className="btn-gold">
               Lihat Anggota ✦
             </Link>
-            <Link href="/proker" className="btn-outline">
-              Dokumentasi Kegiatan
+            <Link href="/kegiatan" className="btn-outline">
+              Lihat Kegiatan
             </Link>
           </div>
         </div>
@@ -61,12 +116,55 @@ export default function Home() {
 
       {/* ===== SAMBUTAN ===== */}
       <section className={`section ${styles.sectionRelative}`}>
-        <FlowerDecor size="large" opacity={0.12} rotation={160} delay={0} top="-5%" left="-2%" />
-        <FlowerDecor size="medium" opacity={0.15} rotation={45} delay={2} top="5%" right="3%" />
-        <FlowerDecor size="small" opacity={0.18} rotation={250} delay={4} bottom="10%" left="8%" />
-        <FlowerDecor size="xs" opacity={0.22} rotation={100} delay={1} top="50%" right="12%" />
-        <FlowerDecor size="medium" blur="light" opacity={0.10} rotation={320} delay={3} bottom="-3%" right="0%" />
-        <FlowerDecor size="xs" opacity={0.16} rotation={190} delay={5} top="30%" left="20%" />
+        <FlowerDecor
+          size="large"
+          opacity={0.12}
+          rotation={160}
+          delay={0}
+          top="-5%"
+          left="-2%"
+        />
+        <FlowerDecor
+          size="medium"
+          opacity={0.15}
+          rotation={45}
+          delay={2}
+          top="5%"
+          right="3%"
+        />
+        <FlowerDecor
+          size="small"
+          opacity={0.18}
+          rotation={250}
+          delay={4}
+          bottom="10%"
+          left="8%"
+        />
+        <FlowerDecor
+          size="xs"
+          opacity={0.22}
+          rotation={100}
+          delay={1}
+          top="50%"
+          right="12%"
+        />
+        <FlowerDecor
+          size="medium"
+          blur="light"
+          opacity={0.1}
+          rotation={320}
+          delay={3}
+          bottom="-3%"
+          right="0%"
+        />
+        <FlowerDecor
+          size="xs"
+          opacity={0.16}
+          rotation={190}
+          delay={5}
+          top="30%"
+          left="20%"
+        />
         <div className="container">
           <ScrollReveal>
             <div className="section-heading">
@@ -92,10 +190,40 @@ export default function Home() {
 
       {/* ===== GALLERY AUTO-SCROLL ===== */}
       <section className={`section ${styles.sectionRelative}`}>
-        <FlowerDecor size="large" blur="light" opacity={0.10} rotation={40} delay={0} top="-5%" left="-2%" />
-        <FlowerDecor size="medium" opacity={0.14} rotation={170} delay={2} top="10%" right="2%" />
-        <FlowerDecor size="small" opacity={0.16} rotation={260} delay={4} bottom="5%" left="10%" />
-        <FlowerDecor size="xs" blur="light" opacity={0.12} rotation={90} delay={1} bottom="20%" right="8%" />
+        <FlowerDecor
+          size="large"
+          blur="light"
+          opacity={0.1}
+          rotation={40}
+          delay={0}
+          top="-5%"
+          left="-2%"
+        />
+        <FlowerDecor
+          size="medium"
+          opacity={0.14}
+          rotation={170}
+          delay={2}
+          top="10%"
+          right="2%"
+        />
+        <FlowerDecor
+          size="small"
+          opacity={0.16}
+          rotation={260}
+          delay={4}
+          bottom="5%"
+          left="10%"
+        />
+        <FlowerDecor
+          size="xs"
+          blur="light"
+          opacity={0.12}
+          rotation={90}
+          delay={1}
+          bottom="20%"
+          right="8%"
+        />
         <div className="container">
           <ScrollReveal>
             <div className="section-heading">
@@ -114,11 +242,50 @@ export default function Home() {
 
       {/* ===== VIDEO ===== */}
       <section className={`section ${styles.sectionRelative}`}>
-        <FlowerDecor size="large" blur="light" opacity={0.10} rotation={55} delay={0} top="-8%" right="-2%" />
-        <FlowerDecor size="medium" blur="medium" opacity={0.12} rotation={135} delay={2} bottom="5%" left="3%" />
-        <FlowerDecor size="small" opacity={0.16} rotation={280} delay={4} top="20%" left="5%" />
-        <FlowerDecor size="xs" blur="light" opacity={0.14} rotation={15} delay={1} bottom="25%" right="8%" />
-        <FlowerDecor size="small" blur="heavy" opacity={0.08} rotation={180} delay={3} top="50%" right="18%" />
+        <FlowerDecor
+          size="large"
+          blur="light"
+          opacity={0.1}
+          rotation={55}
+          delay={0}
+          top="-8%"
+          right="-2%"
+        />
+        <FlowerDecor
+          size="medium"
+          blur="medium"
+          opacity={0.12}
+          rotation={135}
+          delay={2}
+          bottom="5%"
+          left="3%"
+        />
+        <FlowerDecor
+          size="small"
+          opacity={0.16}
+          rotation={280}
+          delay={4}
+          top="20%"
+          left="5%"
+        />
+        <FlowerDecor
+          size="xs"
+          blur="light"
+          opacity={0.14}
+          rotation={15}
+          delay={1}
+          bottom="25%"
+          right="8%"
+        />
+        <FlowerDecor
+          size="small"
+          blur="heavy"
+          opacity={0.08}
+          rotation={180}
+          delay={3}
+          top="50%"
+          right="18%"
+        />
         <div className="container">
           <ScrollReveal>
             <div className="section-heading">
@@ -146,9 +313,32 @@ export default function Home() {
 
       {/* ===== LOKASI ===== */}
       <section className={`section ${styles.sectionRelative}`}>
-        <FlowerDecor size="medium" blur="light" opacity={0.12} rotation={25} delay={0} top="-5%" left="2%" />
-        <FlowerDecor size="small" opacity={0.14} rotation={200} delay={2} bottom="5%" right="5%" />
-        <FlowerDecor size="xs" blur="light" opacity={0.16} rotation={130} delay={3} top="40%" left="8%" />
+        <FlowerDecor
+          size="medium"
+          blur="light"
+          opacity={0.12}
+          rotation={25}
+          delay={0}
+          top="-5%"
+          left="2%"
+        />
+        <FlowerDecor
+          size="small"
+          opacity={0.14}
+          rotation={200}
+          delay={2}
+          bottom="5%"
+          right="5%"
+        />
+        <FlowerDecor
+          size="xs"
+          blur="light"
+          opacity={0.16}
+          rotation={130}
+          delay={3}
+          top="40%"
+          left="8%"
+        />
         <div className="container">
           <ScrollReveal>
             <div className="section-heading">

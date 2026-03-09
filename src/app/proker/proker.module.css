@@ -183,8 +183,8 @@
   aspect-ratio: 4/3;
   border-radius: 12px;
   overflow: hidden;
-  background: rgba(61, 90, 40, 0.06);
-  border: 1px solid var(--border-subtle);
+  background: rgba(61, 90, 40, 0.04);
+  border: 1px solid rgba(139, 105, 20, 0.18);
   cursor: pointer;
   transition: all var(--transition-normal);
 }
@@ -192,7 +192,15 @@
 .galleryItem:hover {
   border-color: var(--border-gold);
   box-shadow: var(--shadow-gold);
-  transform: scale(1.02);
+  transform: translateY(-4px);
+}
+
+.galleryMediaWrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 12px 12px 0 0;
 }
 
 .galleryMedia {
@@ -204,6 +212,29 @@
 
 .galleryItem:hover .galleryMedia {
   transform: scale(1.05);
+}
+
+.galleryCaptionBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 10px;
+  background: linear-gradient(90deg, rgba(255, 250, 221, 0.96), rgba(255, 239, 210, 0.96));
+  border-top: 1px solid rgba(184, 142, 60, 0.25);
+  font-size: 0.75rem;
+}
+
+.galleryType {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.galleryIndex {
+  font-family: var(--font-sans);
+  color: var(--text-muted);
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .videoIndicator {

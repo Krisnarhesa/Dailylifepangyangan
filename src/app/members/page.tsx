@@ -1,6 +1,7 @@
 'use client';
 
 import FlowerDecor from '@/components/FlowerDecor/FlowerDecor';
+import ScrollReveal from '@/components/ScrollReveal/ScrollReveal';
 import members from '@/data/members.json';
 import { supabase } from '@/lib/supabase';
 import Image from 'next/image';
@@ -154,24 +155,28 @@ export default function MembersPage() {
       {/* ===== FOTO BARENG ===== */}
       <section className={`section ${styles.groupPhotoSection}`}>
         <div className="container">
-          <div className="section-heading">
-            <span className="script-title">Our Teams</span>
-            <div className="ornament-divider">
-              <span className="ornament-icon">✦</span>
+          <ScrollReveal>
+            <div className="section-heading">
+              <span className="script-title">Our Teams</span>
+              <div className="ornament-divider">
+                <span className="ornament-icon">✦</span>
+              </div>
+              <p className="subtitle">Keluarga Besar KKN</p>
             </div>
-            <p className="subtitle">Keluarga Besar KKN</p>
-          </div>
-          <div className={styles.groupPhotoWrap}>
-            <Image
-              src="/images/Team.png"
-              alt="Foto Bersama KKN"
-              className={styles.groupPhotoImg}
-              width={1200}
-              height={800}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
-              priority
-            />
-          </div>
+          </ScrollReveal>
+          <ScrollReveal delay={0.15}>
+            <div className={styles.groupPhotoWrap}>
+              <Image
+                src="/images/Team.png"
+                alt="Foto Bersama KKN"
+                className={styles.groupPhotoImg}
+                width={1200}
+                height={800}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
+                priority
+              />
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -184,7 +189,7 @@ export default function MembersPage() {
         <FlowerDecor size="medium" blur="light" opacity={0.10} rotation={280} delay={3} top="75%" right="-2%" />
         <FlowerDecor size="small" opacity={0.12} rotation={20} delay={5} bottom="5%" left="3%" />
 
-        {sortedDivisions.map((divName) => {
+        {sortedDivisions.map((divName, index) => {
           const koor = divisions[divName].filter(m => m.role.toLowerCase().includes('koordinator'));
           const anggota = divisions[divName].filter(m => !m.role.toLowerCase().includes('koordinator'));
 
@@ -226,24 +231,26 @@ export default function MembersPage() {
           };
 
           return (
-            <div key={divName} className={styles.divisionGroup}>
-              <h2 className={styles.divisionTitle}>{divName}</h2>
-              <div className={styles.divisionLine}></div>
+            <ScrollReveal key={divName} delay={0.15 + index * 0.1}>
+              <div className={styles.divisionGroup}>
+                <h2 className={styles.divisionTitle}>{divName}</h2>
+                <div className={styles.divisionLine}></div>
 
-              {/* Koordinator — selalu centered di atas */}
-              {koor.length > 0 && (
-                <div className={styles.koorRow}>
-                  {koor.map(renderCard)}
-                </div>
-              )}
+                {/* Koordinator — selalu centered di atas */}
+                {koor.length > 0 && (
+                  <div className={styles.koorRow}>
+                    {koor.map(renderCard)}
+                  </div>
+                )}
 
-              {/* Anggota — centered di bawah koor */}
-              {anggota.length > 0 && (
-                <div className={styles.memberGrid}>
-                  {anggota.map(renderCard)}
-                </div>
-              )}
-            </div>
+                {/* Anggota — centered di bawah koor */}
+                {anggota.length > 0 && (
+                  <div className={styles.memberGrid}>
+                    {anggota.map(renderCard)}
+                  </div>
+                )}
+              </div>
+            </ScrollReveal>
           );
         })}
       </div>
