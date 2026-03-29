@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1 align="center">📔 Pangyangan KKN Album</h1>
+<p align="center">
+  <em>"Preserving memories, celebrating the journey of our community service."</em>
+</p>
 
-## Getting Started
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Archive-success?style=flat-square" alt="Status">
+  <img src="https://img.shields.io/badge/Powered%20by-Next.js-black?style=flat-square&logo=next.js" alt="Next.js">
+  <img src="https://img.shields.io/badge/Database-Supabase-3ECF8E?style=flat-square&logo=supabase" alt="Supabase">
+</p>
 
-First, run the development server:
+<p align="center">
+  <a href="https://dailylifepangyangan.vercel.app" target="_blank">
+    <img src="https://img.shields.io/badge/Live%20Website-Visit%20Website-blue?style=for-the-badge&logo=vercel" alt="Live Demo">
+  </a>
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p align="center">
+  <img src="./public/cover.png" alt="KKN Pangyangan Collage" width="100%">
+</p>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### ✨ The Story
+**Dailylifepangyangan** is more than just a repository; it’s a digital sanctuary for our KKN memories in **Desa Pangyangan**. It bridges the gap between our service and the stories we left behind, ensuring every moment is preserved in its best light.
 
-## Learn More
+### 🍱 Highlights
+- **Visual Chronicles:** Daily moments captured through the lens of our team.
+- **The Human Element:** Dedicated profiles of the souls who made this journey possible.
+- **The Legacy:** A digital log of our work programs and the impact we made together.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+<p align="center">
+  <em>Created with ❤️ for the community of Pangyangan</em>
+</p>
