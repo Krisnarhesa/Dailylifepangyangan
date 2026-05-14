@@ -209,7 +209,7 @@
       "/images/proker/remaja/12.jpg",
       "/images/proker/remaja/13.jpg",
       "/images/proker/remaja/14.jpg",
-       "/images/proker/remaja/2.jpg",
+      "/images/proker/remaja/2.jpg",
       "/images/proker/remaja/11.jpg",
       "/images/proker/remaja/15.jpg"
     ],
@@ -255,8 +255,56 @@
       "/images/proker/rip-cimeng/3.jpeg"
     ],
     "videos": [
-      "/images/proker/rip-cimeng/1.mp4" 
+      "/images/proker/rip-cimeng/1.mp4"
+    ]
+  },
+  {
+    "id": "sidang-trisya",
+    "title": "Sidang Mami Cimeng",
+    "division": "",
+    "description": "Congrats Komang Trisya Cahyani (uo) S.KH",
+    "date": "30 April 2026",
+    "coverImage": "/images/proker/sidang-trisya/1778746464183.jpeg",
+    "photos": [
+      "/images/proker/sidang-trisya/1778746481242.jpeg",
+      "/images/proker/sidang-trisya/1778746481243.jpeg",
+      "/images/proker/sidang-trisya/1778746481244.jpeg",
+      "/images/proker/sidang-trisya/1778746481245.jpeg"
+    ],
+    "videos": [
+      "/images/proker/sidang-trisya/1778746723594.mp4"
+    ]
+  },
+  {
+    "id": "sidang-asri",
+    "title": "Sidang Nona Asri",
+    "division": "",
+    "description": "Congrats Ominike Asriyanti Jelia (uo) S.Par",
+    "date": "7 Mei 2026",
+    "coverImage": "/images/proker/sidang-asri/1778747231674.jpeg",
+    "photos": [
+      "/images/proker/sidang-asri/1778747248368.jpeg",
+      "/images/proker/sidang-asri/1778747248369.jpeg",
+      "/images/proker/sidang-asri/1778747248370.jpeg",
+      "/images/proker/sidang-asri/1778747248371.jpeg"
+    ],
+    "videos": []
+  },
+  {
+    "id": "sidang-devany",
+    "title": "Sidang Dek Pani",
+    "division": "",
+    "description": "Congrats Luh Devany Natania Putri Wikarsa (uo) S.KG",
+    "date": "8 Mei 2026",
+    "coverImage": "/images/proker/sidang-devany/1778747606869.jpeg",
+    "photos": [
+      "/images/proker/sidang-devany/1778747626482.jpeg",
+      "/images/proker/sidang-devany/1778747626483.jpeg",
+      "/images/proker/sidang-devany/1778747626484.jpeg",
+      "/images/proker/sidang-devany/1778747686352.jpeg"
+    ],
+    "videos": [
+      "/images/proker/sidang-devany/1778747633638.mp4"
     ]
   }
 ]
-      
