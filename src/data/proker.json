@@ -306,5 +306,71 @@
     "videos": [
       "/images/proker/sidang-devany/1778747633638.mp4"
     ]
+  },
+  {
+    "id": "sidang-candra",
+    "title": "Sidang Pak Kordes",
+    "division": "",
+    "description": "Congrats I Made Candra Arya Wiranata (uo) S.Ke",
+    "date": "20 Mei 2026",
+    "coverImage": "/images/proker/sidang-candra/1779786147951.jpeg",
+    "photos": [
+      "/images/proker/sidang-candra/1779786109354.jpeg",
+      "/images/proker/sidang-candra/1779786109355.jpeg",
+      "/images/proker/sidang-candra/1779786109356.jpeg",
+      "/images/proker/sidang-candra/1779786109357.jpeg",
+      "/images/proker/sidang-candra/1779786109358.jpeg",
+      "/images/proker/sidang-candra/1779786109360.jpeg",
+      "/images/proker/sidang-candra/1779786109361.jpeg"
+    ],
+    "videos": [
+      "/images/proker/sidang-candra/1779786154351.mp4"
+    ]
+  },
+  {
+    "id": "sidang-sindy",
+    "title": "Sidang Sindy",
+    "division": "",
+    "description": "Congrats Sindy Firdaus (uo) S.Ft",
+    "date": "21 Mei 2026",
+    "coverImage": "/images/proker/sidang-sindy/1779786569180.jpeg",
+    "photos": [
+      "/images/proker/sidang-sindy/1779786588564.jpeg",
+      "/images/proker/sidang-sindy/1779786588565.jpeg",
+      "/images/proker/sidang-sindy/1779786588565.jpeg",
+      "/images/proker/sidang-sindy/1779786588566.jpeg",
+      "/images/proker/sidang-sindy/1779786588567.jpeg",
+      "/images/proker/sidang-sindy/1779786588568.jpeg",
+      "/images/proker/sidang-sindy/1779786588570.jpeg",
+      "/images/proker/sidang-sindy/1779786588570.jpeg",
+      "/images/proker/sidang-sindy/1779786588571.jpeg"
+    ],
+    "videos": []
+  },
+  {
+    "id": "sidang-tania-vina",
+    "title": "Sidang Tania & Vina",
+    "division": "",
+    "description": "Congrats Atania Karina Saragih (uo) S.E & Wivina Tresna Hendayu (uo) S.Sos",
+    "date": "22 Mei 2026",
+    "coverImage": "/images/proker/sidang-tania-vina/1779786949055.jpeg",
+    "photos": [
+      "/images/proker/sidang-tania-vina/1779786965019.jpeg",
+      "/images/proker/sidang-tania-vina/1779786965020.jpeg",
+      "/images/proker/sidang-tania-vina/1779786965021.jpeg",
+      "/images/proker/sidang-tania-vina/1779786965022.jpeg",
+      "/images/proker/sidang-tania-vina/1779786965023.jpeg",
+      "/images/proker/sidang-tania-vina/1779786965024.jpeg",
+      "/images/proker/sidang-tania-vina/1779786965025.jpeg",
+      "/images/proker/sidang-tania-vina/1779786965026.jpeg",
+      "/images/proker/sidang-tania-vina/1779786965026.jpeg",
+      "/images/proker/sidang-tania-vina/1779786965027.jpeg",
+      "/images/proker/sidang-tania-vina/1779786965028.jpeg",
+      "/images/proker/sidang-tania-vina/1779786965029.jpeg"
+    ],
+    "videos": [
+      "/images/proker/sidang-tania-vina/1779786989536.mp4",
+      "/images/proker/sidang-tania-vina/1779787020296.mp4"
+    ]
   }
 ]
